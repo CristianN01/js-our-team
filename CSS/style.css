@@ -20,4 +20,7 @@ article.card{
     height: 5rem;
     width: calc((100% / 3) - 20px);
     border: 2px solid gray;
+    text-align: center;
+    
+    
 }
