@@ -39,4 +39,4 @@ const ourTeam = [
     },
 ]
 
-console.log(membroUno)
+console.log(ourTeam)
