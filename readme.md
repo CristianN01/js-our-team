@@ -19,3 +19,9 @@ Organizzare i singoli membri in card/schede
 
 Consigli del giorno:
 Ragioniamo come sempre a step. Prima la logica in italiano e poi traduciamo in codice.E ricordiamoci che console.log() è nostro amico!
+
+<!-- SCOMPONIAMO IL PROBLEMA -->
+
+1 Creo un array di oggetti con dentro il nome del membro del team e tutte le sue caratteristiche.
+2 Queste informazioni stamparle con un console.log sulla console.
+3 infine aggiungere queste informazioni, oltre che in console, sul dom visualizzando tutte le caratteristiche.
