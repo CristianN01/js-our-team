@@ -1,0 +1,23 @@
+.articles{
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+section.title{
+    text-align: center;
+}
+
+section.title > p{
+    padding: 0 25rem;
+}
+
+article.card{
+    height: 5rem;
+    width: calc((100% / 3) - 20px);
+    border: 2px solid gray;
+}

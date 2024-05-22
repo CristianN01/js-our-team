@@ -5,7 +5,7 @@
 // Scott Estrada	Developer	scott-estrada-developer.jpg
 // Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 
-// creo la mia array di oggetti
+// creo la mia array di oggetti.
 const ourTeam = [
     {
         nome: 'Wayne Barnett',
@@ -38,7 +38,21 @@ const ourTeam = [
         foto: 'barbara-ramos-graphic-designer.jpg',
     },
 ]
-
+// Li stampo in console.
 for (const key in ourTeam) {
     console.log( key,':', ourTeam[key])
 }
+
+// seleziono la section dove verra stampato il mio array.
+const cardContainer = document.querySelector('section.articles')
+
+ // funzione che crea un article, in base alla lunghezza della nostra array in questo caso 6, con aggiunta della classe card, per poi aggiungerli alla section nel nostro DOM.
+for (let index = 0; index < ourTeam.length; index++) {
+    const cards = document.createElement('article')
+    cards.classList.add('card')
+
+    cardContainer.appendChild(cards)
+}
+
+
+
