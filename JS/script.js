@@ -38,6 +38,8 @@ const ourTeam = [
         foto: 'barbara-ramos-graphic-designer.jpg',
     },
 ]
+
+
 // Li stampo in console.
 for (const key in ourTeam) {
     console.log( key,':', ourTeam[key])
@@ -52,10 +54,13 @@ for (let index = 0; index < ourTeam.length; index++) {
      const cards = document.createElement('article')
      cards.classList.add('card')
      cardContainer.appendChild(cards)
+     
      cards.append(ourTeam[index].nome)
      cards.append(ourTeam[index].ruolo)
      cards.append(ourTeam[index].foto)    
-}
+    }
+
+    
 
 
 
