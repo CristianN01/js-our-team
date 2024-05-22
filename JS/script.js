@@ -47,19 +47,17 @@ for (const key in ourTeam) {
 const cardContainer = document.querySelector('section.articles')
 
  // funzione che crea un article, in base alla lunghezza della nostra array in questo caso 6, con aggiunta della classe card, per poi aggiungerli alla section nel nostro DOM.
-//  for (const key in ourTeam) {
-//      const cards = document.createElement('article')
-//      cards.classList.add('card')
-//      cardContainer.appendChild(cards)
-//      cards.append(key, ourTeam[key])
-//  }
 
 for (let index = 0; index < ourTeam.length; index++) {
      const cards = document.createElement('article')
      cards.classList.add('card')
      cardContainer.appendChild(cards)
-     cards.append(ourTeam[index].foto,ourTeam[index].nome,ourTeam[index].ruolo)
+     cards.append(ourTeam[index].nome)
+     cards.append(ourTeam[index].ruolo)
+     cards.append(ourTeam[index].foto)    
 }
+
+
 
 
 
