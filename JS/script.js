@@ -53,11 +53,23 @@ const cardContainer = document.querySelector('section.articles')
 for (let index = 0; index < ourTeam.length; index++) {
      const cards = document.createElement('article')
      cards.classList.add('card')
-     cardContainer.appendChild(cards)
+
+     const nameEl = document.createElement('h2')
+     nameEl.classList.add('title')
+     nameEl.append(ourTeam[index].nome)
+
+     const jobEl = document.createElement('p')
+     jobEl.classList.add('job')
+     jobEl.append(ourTeam[index].ruolo)
      
-     cards.append(ourTeam[index].nome)
-     cards.append(ourTeam[index].ruolo)
-     cards.append(ourTeam[index].foto)    
+     
+     const imgEl = document.createElement('img');
+     imgEl.src = `./img/${ourTeam[index].foto}`
+
+     cards.appendChild(imgEl)
+     cards.appendChild(nameEl)
+     cards.appendChild(jobEl)
+     cardContainer.appendChild(cards)
     }
 
     
